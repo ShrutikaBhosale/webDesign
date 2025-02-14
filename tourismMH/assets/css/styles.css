@@ -1,0 +1,192 @@
+body {
+  margin: 50px;
+  font-family: fantasy;
+  background-repeat:no-repeat ;
+  background-size: cover;
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+}
+
+summary{
+ color: #450920;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+details{
+  color: black;
+  font-size: 20px;
+}
+
+.header{
+  font-size: 30px;
+  width: 100%;
+}
+
+.links{
+  font-weight: 100px;
+  margin: 30px;
+  color: #450920;
+  font-style: oblique ;
+}
+
+h1{
+  color: #450920;
+  font-size: 50px;
+  margin: 16px;
+}
+
+h2{
+  color: #1B4965;
+  font-size: 38px;
+  margin: 12px;
+}
+
+h3{
+  font-size: 34px;
+  color: #1B4965;
+  margin: 12px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;  
+}
+
+hr {
+  margin-top: 30px;
+  border: 2px solid black;
+}
+
+
+
+.logo{
+  width: 40px;
+  height: 40px;
+}
+
+.footer{
+  display: flex;
+font-style: oblique ;
+width: 100%;
+margin-top: 20px;
+}
+
+.contact {
+  margin-top: 20px;
+  margin-bottom: 20px;
+margin-left: 350px;
+  align-content: center;
+}
+
+.quickLinks{
+  margin-top: 20px;
+  margin-bottom: 20px;
+ margin-left: 550px;
+  align-content: center;
+}
+
+.things {
+  width: 1000px;  
+  display: flex;
+  margin-left: 350px;
+  margin-top: 30px;
+  margin-bottom: 6%;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 20px; 
+}
+
+.img {
+  border-radius: 20%;
+  justify-content: center;
+  margin: 20px;
+  max-width: 400px; 
+}
+
+.todo {
+  margin-top: 8%;
+  margin-left: 20px;
+  font-size: 30px;
+  color: white;
+}
+
+.titles {
+  font-size: 50px;
+  color: white;
+}
+
+.footerTitle{
+  color: #450920;
+  font-size: 30px;
+}
+
+.address{
+font-style: oblique ;
+font-size: 25px;
+}
+
+/* .main-title{
+  font-family: fantasy;
+  font-size: 50px;
+  font-weight: 100px;
+  color: #450920;
+} */
+
+.districts{
+  width: 400px;
+  height: 300px;
+}
+
+.row1{
+  display: flex;
+  margin-bottom: 50px;
+  margin-left: 370px;
+  margin-top: 50px;
+}
+
+.row2{
+  display: flex;
+  margin-top: 100px;
+  margin-left: 370px;
+  margin-bottom: 50px;
+
+}
+
+.figcaption{
+  font-size: 30px;
+  font-style: oblique;
+}
+
+.attr-img{
+  width: 250px;
+  height: 300px;
+  border-radius:20px ;
+}
+
+.place-details{
+  font-size: 30px;
+}
+
+.details{
+  font-size: 20px;
+}
+
+.places{
+  display: flex;
+  margin-left: 400px;
+
+}
+.attractions{
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 20px; 
+  padding: 20px;
+}
+
+.forts-title{
+  font-size: 30px;
+  color: #450920;
+  font-weight: 900px;
+}
