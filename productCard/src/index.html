@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Product Card</title>
+    <style>
+      * {
+        font-family: serif;
+        font-weight: 300;
+      }
+      article {
+        box-shadow: 10px 10px 10px rgba(234, 227, 227, 0.8);
+        padding: 20px;
+        background-color: rgb(232, 187, 187);
+        width: 800px;
+        height: 550px;
+        border: 2px solid rgb(253, 253, 253);
+        border-radius: 20px;
+        margin: auto;
+        margin-top: 200px;
+        box-shadow: 20px;
+        background-color: rgba(223, 206, 206, 0.5);
+      }
+      div {
+        float: left;
+        width: 300px;
+        margin: 20px;
+        margin-left: 50px;
+      }
+
+      p {
+        font-size: 26px;
+        color: rgba(105, 105, 105);
+        font-weight: 300;
+        text-align: justify;
+      }
+
+      img {
+        margin-top: 90px;
+        width: 400px;
+        /* height: 300px; */
+      }
+      h1 {
+        margin-left: 40px;
+        font-weight: 900;
+      }
+      h2 {
+        margin-left: 110px;
+        font-size: 16px;
+      }
+
+      #login {
+        margin-left: 190px;
+        color: white;
+        border: 2px solid rgb(25, 2, 2);
+        border-radius: 10px;
+        font-size: 20px;
+        background-color: rgba(208, 33, 91, 0.4);
+        padding: 10px 14px 10px 14px;
+      }
+      #rating {
+        color: goldenrod;
+        margin-left: 100px;
+      }
+
+      #price {
+        font-size: 30px;
+        margin-left: 108px;
+        color: palevioletred;
+        margin-top: 20px;
+        margin-bottom: 0px;
+      }
+      #fakePrice {
+        font-size: 20px;
+        margin-left: 130px;
+        margin-bottom: 0px;
+      }
+      #add-cart {
+        color: white;
+
+        background-color: rgba(208, 33, 91, 0.4);
+        padding: 10px 14px 10px 14px;
+        border: 2px solid rgb(14, 1, 1);
+        border-radius: 20px;
+        margin-top: 20px;
+        margin-left: 84px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <article class="ProductCard">
+      <div class="description">
+        <p>
+          Capture the thrill of your adventure with this rugged, waterproof
+          action camera. Featuring video resolution, wide-angle lens, and
+          built-in stabilization, it’s ready to go wherever you do from the
+          slopes to the sea.
+        </p>
+        <h3 id="fakePrice"><s>$1800.00</s></h3>
+        <h2 id="price">$1500.00</h2>
+        <h2>FREE SHIPPING</h2>
+        <button id="add-cart">ADD TO CART</button>
+      </div>
+      <div class="image">
+        <!-- <button id="login">LOGIN FOR MORE</button> -->
+        <img src="../assets/camera1.png" />
+        <h1>CANON EOS 90D DSLR</h1>
+        <p id="rating">★★★★☆</p>
+      </div>
+    </article>
+  </body>
+</html>
