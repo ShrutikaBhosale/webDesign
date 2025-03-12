@@ -1,0 +1,139 @@
+*{
+  font-family: sans-serif;
+  margin: 0px;
+}
+
+#logo{
+  width: 140px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.header{
+  display: flex;
+  position: sticky;
+  top: 0px;
+  background-color: #333232;
+  height: 80px;
+  width: 100%;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.navigation{
+  justify-content: center;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.options,.like{
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 24px;
+  margin: 20px;
+  margin-left: 40px;
+  
+}
+
+ .icons{
+  display: flex;
+  justify-content: center;
+ align-items: center;
+}
+
+#search{
+  height: 40px;
+  width: 500px;
+  text-align: center;
+  margin-top: 22px;
+  margin-left: 30px;
+  border-radius: 5px;
+
+}
+
+.image-slider {
+  position: relative;
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+}
+
+.slider-image {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+@keyframes slide {
+  0% { opacity: 0; }
+  25% { opacity: 1; }
+  50% { opacity: 0; }
+  75% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.slider-image {
+  position: absolute;
+  opacity: 0;
+  animation: slide 16s infinite;
+}
+
+.slider-image:nth-child(1) {
+  animation: slide 16s infinite 0s;
+}
+
+.slider-image:nth-child(2) {
+  animation: slide 16s infinite 4s;
+}
+
+.slider-image:nth-child(3) {
+  animation: slide 16s infinite 8s;
+}
+
+.slider-image:nth-child(4) {
+  animation: slide 16s infinite 12s;
+}
+
+.slider-image:nth-child(5) {
+  animation: slide 16s infinite 16s;
+}
+
+.slider-image:nth-child(6) {
+  animation: slide 16s infinite 20s;
+}
+
+.slider-image:nth-child(7) {
+  animation: slide 16s infinite 24s;
+}
+
+
+.categories{
+  margin: 60px;
+}
+
+
+h1{
+  font-size: 42px;
+  font-weight: 500;
+  text-align: center;
+  margin: 30px;
+}
+
+.best-brands{
+  width: 70%;
+  height: 300px;
+  margin-left: 280px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.best-brands > a > img{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  display: inline-block;
+}

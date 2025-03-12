@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fingerprint Scanner</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #111;
+        color: white;
+        font-family: sans-serif;
+      }
+
+      .scanner {
+        width: 150px;
+        height: 200px;
+        background: radial-gradient(
+          circle,
+          rgba(0, 255, 0, 0.2) 30%,
+          transparent 70%
+        );
+        border: 3px solid lime;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+
+      .scanner::before {
+        content: "";
+        position: absolute;
+        width: 80%;
+        height: 5px;
+        background: lime;
+        animation: scan 2s infinite;
+      }
+      @keyframes scan {
+        0% {
+          top: 10%;
+          opacity: 0.5;
+        }
+        50% {
+          top: 50%;
+          opacity: 1;
+        }
+        100% {
+          top: 90%;
+          opacity: 0.5;
+        }
+      }
+      .message {
+        position: absolute;
+        bottom: -40px;
+        font-size: 18px;
+        opacity: 0;
+        transition: opacity 0.5s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="scanner">
+      <div class="message">Scanning...</div>
+    </div>
+
+    <script>
+      const scanFingerprint = () => {
+        const message = document.querySelector(".message");
+        message.style.opacity = 1;
+        setTimeout(() => {
+          message.textContent =
+            Math.random() > 0.5 ? "Access Granted" : "Access Denied";
+        }, 2000);
+      };
+
+      const scanner = document
+        .querySelector(".scanner")
+        .addEventListener("click", scanFingerprint);
+    </script>
+  </body>
+</html>

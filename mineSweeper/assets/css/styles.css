@@ -1,0 +1,51 @@
+body{
+  background-color: black;
+}
+
+h1{
+  font-size: 40px;
+  font-family: fantasy;
+  margin-left: 700px;
+  color: whitesmoke;
+}
+
+.parent {
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+  margin-left: 620px;
+}
+.parent > .cell {
+  border: 2px solid white;
+}
+
+.highlight {
+  background-color: limegreen;
+}
+
+@keyframes mine-explode {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.mine-animation {
+  background-image: url("../images/mine.png");
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: mine-explode 0.5s ease-in-out;
+}
